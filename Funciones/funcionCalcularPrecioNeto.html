@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+
+        var precio = parseInt(prompt("Precio: "))
+        var impuesto = parseInt(prompt("Impuesto: % (escribelo sin el %)"))
+        function calcularPrecio(precio, impuesto) {
+            return precio - (precio*impuesto)/100
+        }
+        document.write("El precio neto es: " + calcularPrecio(precio,impuesto))
+
+    </script>
+</body>
+</html>

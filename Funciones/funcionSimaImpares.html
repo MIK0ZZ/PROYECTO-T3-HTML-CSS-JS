@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+
+        var num = parseInt(prompt("Dime un numero hasta el que llegar: "))
+        var modo = prompt("Ahora si 'par' o 'impar': ")
+        var suma = 0
+        var array = []
+        function modoCalculo(modo) {
+            if(modo == "par") {
+                return i % 2 == 0
+            } else {
+                return i % 2 != 0
+            }
+        }
+        for(var i = 0; i <= num; i++) {
+            if (modoCalculo(modo)) {
+                suma += i
+                array.push(i)
+                array.push("<br>")
+            }
+        }
+        document.write(suma + "<br>")
+        document.write(array)
+
+    </script>
+</body>
+</html>

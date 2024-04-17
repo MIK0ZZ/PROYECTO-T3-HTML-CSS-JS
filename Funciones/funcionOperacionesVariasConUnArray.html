@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+
+        var array = [ 1,4,2,5,2]
+        var operacion = prompt("Operacion: ")
+        var numero = parseInt(prompt("Numero: "))
+        function hacer(array,operacion,numero) {
+            switch (operacion) {
+                case "+": var result = array.map(array => array + numero)
+                    return result.join(",")
+                    break
+                case "-": var result = array.map(array => array - numero)
+                    return result.join(",")
+                    break
+                case "*": var result = array.map(array => array * numero)
+                    return result.join(",")
+                    break
+                case "/": var result = array.map(array => array / numero)
+                    return result.join(",")
+                    break
+            }
+        }
+        document.write("Array = " + array + "<br>")
+        document.write(hacer(array,operacion,numero))
+    
+    </script>
+</body>
+</html>

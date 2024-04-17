@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+
+        var entrada = prompt("Dime una frase y te digo si es capicúa o no")
+        function invertir_cadena(entrada) {
+            var cadena = entrada.split("")
+            var cadenaNueva = cadena.reverse()
+            cadenaNueva = cadenaNueva.join("")
+            if (entrada == cadenaNueva) {
+                return (cadenaNueva + " es capicúa")
+            } else {
+                return (cadenaNueva + " no es capicúa")
+            }
+        }
+        document.write(invertir_cadena(entrada))
+
+    </script>
+</body>
+</html>

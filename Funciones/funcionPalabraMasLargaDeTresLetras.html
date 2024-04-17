@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+
+        var cadena = prompt("Dime una frase")
+        function larga(_cadena) {
+            var cadena = _cadena.split(" ")
+            var palabrasLargas = []
+            for(var i = 0; i<cadena.length;i++) {
+                if(cadena[i].length >= 3) {
+                    palabrasLargas.push(cadena[i])
+                }
+            } return palabrasLargas
+        }
+        document.write(larga(cadena))
+
+    </script>
+</body>
+</html>

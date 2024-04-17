@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+
+        var array = [1,1,1,3,5,1]
+        document.write("Array: " + array + "<br>")
+        function media(array) {
+            var media = 0
+            for(var i = 0; i < array.length; i++) {
+                media += array[i]
+            }
+            media = media / array.length
+            return "La media es de: " + media
+        }
+        document.write(media(array))
+
+    </script>
+</body>
+</html>

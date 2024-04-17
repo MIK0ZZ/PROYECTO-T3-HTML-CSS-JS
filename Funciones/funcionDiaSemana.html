@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+
+        var dia = parseInt(prompt("Día de la semana: 1-7"))
+        function diasemana(dia) {
+            switch(dia) {
+            case 1:
+                return "Lunes"
+                break;
+            case 2:
+                return "Martes"
+                break;
+            case 3:
+                return "Miércoles"
+                break;
+            case 4:
+                return "Jueves"
+                break;
+            case 5:
+                return "Viernes"
+                break;
+            case 6:
+                return "Sábado"
+                break;
+            case 7:
+                return "Domingo"
+                break;
+            default:
+                return "ERROR"
+            }
+        }
+        document.write("Ese día es: " + diasemana(dia))
+        
+
+    </script>
+</body>
+</html>

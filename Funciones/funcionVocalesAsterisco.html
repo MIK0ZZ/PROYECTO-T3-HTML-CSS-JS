@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    
+    <script>
+
+        var frase = prompt("Introduce una frase/palabra: ")
+        var vocales = ["a","e","i","o","u"]
+        var array = frase.split("")
+        function transformar(i) {
+            if(array[i] == "a" || array[i] == "e" || array[i] == "i" || array[i] == "o" || array[i] == "u") {
+                array[i] = "*"
+            } 
+        }
+        for(var i = 0; i < array.length; i++) {
+            transformar(i)
+        }
+        
+        document.write(array.join(""))
+        
+
+    </script>
+</body>
+</html>

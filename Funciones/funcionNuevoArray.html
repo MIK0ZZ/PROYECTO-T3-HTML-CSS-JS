@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script>
+
+        var n = parseInt(prompt("Numero:"))
+        function nuevoArray(n) {
+            var array = []
+            for(var i = 1; i <= n; i++) {
+                array.push(i)
+                array.push("<br>")
+            }
+            return array
+        }
+        document.write(nuevoArray(n))
+
+    </script>
+</body>
+</html>

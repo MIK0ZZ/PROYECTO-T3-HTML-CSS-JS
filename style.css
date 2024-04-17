@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: "Monocraft";
+    src: url("./Fonts/Monocraft.otf");
+}
+
+body {
+    font-family: "Monocraft";
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+header {
+    background-color: rgb(214, 214, 214);
+    height: 52px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+header .derecha {
+    text-align: center;
+    padding-top: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding-top: 6px;
+    margin-left: 10px;
+    font-size: 32px;
+}
+
+header h1 {
+    margin-top: 0px;
+    padding-top: 6px;
+    margin-left: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.caja {
+    background-image: url("./Sprites/fondo.png");
+    width:1590.5px
+}
+
+#funciones {
+    /*display: none;*/
+    width: 1424.5px;
+    height:539.5px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 90px;
+    margin-left: 90px;
+}
+
+
+
+.buttonBar {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(109, 109, 109);
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.invisible {
+    height: 50px;
+}
+
+.accion {
+    font-family: "Monocraft";
+    appearance: none; 
+    border: 0; 
+    background: transparent;
+    background-image: url('./Sprites/Button.png');
+    width: 312px;
+    height: 64px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.accion:hover {
+    background-image: url('./Sprites/ButtonHover.png');
+}
+
+.accion:active {
+    background-image: url('./Sprites/ButtonClick.png');
+}
+
+
+
+
+

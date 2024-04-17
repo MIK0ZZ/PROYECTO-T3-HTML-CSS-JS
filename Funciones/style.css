@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Monocraft";
+    src: url("../Fonts/Monocraft.otf");
+}
+body {
+    font-family: "Monocraft";
+    font-size: 120px;
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+    text-align: center;
+    overflow-x: hidden;
+}
